@@ -7,17 +7,29 @@
              xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core">
     <Application.Resources>
         <ResourceDictionary>
+            <FontAttributes x:Key="TitleFontAttribute">Bold</FontAttributes>
+            <Color x:Key="BarBackgroundColor">White</Color>
+            <Color x:Key="PrimaryTextColor">Black</Color>
+
             <Style TargetType="Label">
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
                 <Setter Property="VerticalTextAlignment" Value="Center"/>
+                <Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}"/>
             </Style>
 
             <Style x:Key="TitleMenuStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="FontAttributes" Value="{StaticResource TitleFontAttribute}"/>
+            </Style>
+
+            <Style x:Key="NavigationPageTitleStyle" TargetType="Label">
                 <Setter Property="FontSize" Value="Title"/>
+                <Setter Property="FontAttributes" Value="{StaticResource TitleFontAttribute}"/>
             </Style>
 
             <Style x:Key="DetailMenuStyle" TargetType="Label">
                 <Setter Property="FontSize" Value="Subtitle"/>
+                <Setter Property="TextColor" Value="Gray"/>
             </Style>
 
             <Style TargetType="controls:MenuView">
@@ -26,15 +38,15 @@
 
             <Style TargetType="views:MenuTabbedPage">
                 <Setter Property="SelectedTabColor" Value="Gold"/>
-                <Setter Property="BarTextColor" Value="Black"/>
-                <Setter Property="BarBackgroundColor" Value="White"/>
+                <Setter Property="BarTextColor" Value="{StaticResource PrimaryTextColor}"/>
+                <Setter Property="BarBackgroundColor" Value="{StaticResource BarBackgroundColor}"/>
                 <Setter Property="BackgroundColor" Value="WhiteSmoke"/>
                 <Setter Property="android:TabbedPage.ToolbarPlacement" Value="Bottom"/>
             </Style>
 
             <Style TargetType="NavigationPage">
-                <Setter Property="BarBackground" Value="White"/>
-                <Setter Property="BarTextColor" Value="Black"/>
+                <Setter Property="BarBackgroundColor" Value="{StaticResource BarBackgroundColor}"/>
+                <Setter Property="BarTextColor" Value="{StaticResource PrimaryTextColor}"/>
             </Style>
         </ResourceDictionary>
     </Application.Resources>

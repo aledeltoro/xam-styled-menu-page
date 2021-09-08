@@ -4,7 +4,10 @@
             x:Class="XamStyledMenuPage.Views.MenuTabbedPage"
             xmlns:local="clr-namespace:XamStyledMenuPage.Views"
             Title="Discovery">
-     <!--Pages can be added as references or inline-->
+    <NavigationPage.TitleView>
+        <Label Text="Discovery" Style="{StaticResource NavigationPageTitleStyle}"/>
+    </NavigationPage.TitleView>
+    
     <ContentPage Title="Home" IconImageSource="outline_home_black_24.png" />
     <local:DiscoveryPage Title="Discovery" IconImageSource="outline_place_black_24.png"/>
     <ContentPage Title="Bookmark" IconImageSource="outline_bookmark_border_black_24.png"/>
