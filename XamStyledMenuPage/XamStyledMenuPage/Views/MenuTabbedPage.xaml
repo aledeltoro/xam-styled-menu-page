@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="XamStyledMenuPage.Views.MenuTabbedPage"
+            xmlns:local="clr-namespace:XamStyledMenuPage.Views"
+            Title="Discovery">
+     <!--Pages can be added as references or inline-->
+    <ContentPage Title="Home" IconImageSource="outline_home_black_24.png" />
+    <local:DiscoveryPage Title="Discovery" IconImageSource="outline_place_black_24.png"/>
+    <ContentPage Title="Bookmark" IconImageSource="outline_bookmark_border_black_24.png"/>
+    <ContentPage Title="Top Foods" IconImageSource="outline_emoji_events_black_24.png"/>
+    <ContentPage Title="Profile" IconImageSource="outline_person_black_24.png"/>
+</TabbedPage>

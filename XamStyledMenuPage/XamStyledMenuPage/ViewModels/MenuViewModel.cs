@@ -18,7 +18,7 @@ namespace XamStyledMenuPage.ViewModels
         {
             BarAndHotelsOption = new MenuOption("Bar and Hotels", "42 Places", "outline_sports_bar_black_48.png");
             FineDiningOption = new MenuOption("Fine Dining", "15 Places", "outline_restaurant_black_48.png");
-            CafesOption = new MenuOption("Cafes", "28 Places", "outline_place_black_48.png");
+            CafesOption = new MenuOption("Cafes", "28 Places", "outline_storefront_black_48.png");
             NearbyOption = new MenuOption("Nearby", "34 Places", "outline_place_black_48.png");
             FastFoodsOption = new MenuOption("Fast Foods", "29 Places", "outline_fastfood_black_48.png");
             FeaturedFoodsOption = new MenuOption("Featured Foods", "21 Places", "outline_local_pizza_black_48.png");

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamStyledMenuPage.Views.DiscoveryPage"
+             xmlns:controls="clr-namespace:XamStyledMenuPage.Controls" 
+             xmlns:viewmodels="clr-namespace:XamStyledMenuPage.ViewModels"
+             x:DataType="viewmodels:MenuViewModel">
+    <ContentPage.Content>
+        <Grid
+            RowDefinitions="*, *, *"
+            ColumnDefinitions="*, *"
+            Padding="20">
+
+            <controls:MenuView 
+                Grid.Row="0"
+                Grid.Column="0"
+                BindingContext="{Binding BarAndHotelsOption}"/>
+
+            <controls:MenuView 
+                Grid.Row="0"
+                Grid.Column="1"
+                BindingContext="{Binding FineDiningOption}"/>
+
+            <controls:MenuView 
+                Grid.Row="1"
+                Grid.Column="0"
+                BindingContext="{Binding CafesOption}"/>
+
+            <controls:MenuView 
+                Grid.Row="1"
+                Grid.Column="1"
+                BindingContext="{Binding NearbyOption}"/>
+
+            <controls:MenuView 
+                Grid.Row="2"
+                Grid.Column="0"
+                BindingContext="{Binding FastFoodsOption}"/>
+
+            <controls:MenuView 
+                Grid.Row="2"
+                Grid.Column="1"
+                BindingContext="{Binding FeaturedFoodsOption}"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

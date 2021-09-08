@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamStyledMenuPage.Views;
 
 namespace XamStyledMenuPage
 {
@@ -10,7 +11,7 @@ namespace XamStyledMenuPage
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MenuTabbedPage());
         }
 
         protected override void OnStart()

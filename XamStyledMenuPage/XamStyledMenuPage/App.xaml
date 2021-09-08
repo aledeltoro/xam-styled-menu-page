@@ -1,8 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamStyledMenuPage.App">
+             x:Class="XamStyledMenuPage.App"
+             xmlns:controls="clr-namespace:XamStyledMenuPage.Controls"
+             xmlns:views="clr-namespace:XamStyledMenuPage.Views"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core">
     <Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+            </Style>
 
+            <Style x:Key="TitleMenuStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Title"/>
+            </Style>
+
+            <Style x:Key="DetailMenuStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Subtitle"/>
+            </Style>
+
+            <Style TargetType="controls:MenuView">
+                <Setter Property="Margin" Value="5, 0, 5, 10" />
+            </Style>
+
+            <Style TargetType="views:MenuTabbedPage">
+                <Setter Property="SelectedTabColor" Value="Gold"/>
+                <Setter Property="BarTextColor" Value="Black"/>
+                <Setter Property="BarBackgroundColor" Value="White"/>
+                <Setter Property="BackgroundColor" Value="WhiteSmoke"/>
+                <Setter Property="android:TabbedPage.ToolbarPlacement" Value="Bottom"/>
+            </Style>
+
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackground" Value="White"/>
+                <Setter Property="BarTextColor" Value="Black"/>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
