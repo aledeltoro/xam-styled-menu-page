@@ -5,7 +5,7 @@ using System.Text;
 
 namespace XamStyledMenuPage.ViewModels
 {
-    public class BaseViewModel : INotifyPropertyChanged
+    public abstract class BaseViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
     }
